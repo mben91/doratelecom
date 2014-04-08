@@ -97,17 +97,27 @@ h2 {
 
 h3 {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 26px;
   width: 100%;
   padding-bottom: 0px;
   font-weight: 400;
 }
 
+h5 {
+  font-size: 15px;
+  color: #fff;
+  line-height: 26px;
+  width: 100%;
+  padding-bottom: 0px;
+  font-weight: 400;
+  color: #FF6C00;
+}
+
 p {
   font-family: Arial, sans-serif;
   padding-bottom: 0px;
-  font-size: 15px;
+  font-size: 14px;
   color: #808080;
   line-height: 26px;
 }
@@ -184,7 +194,7 @@ header {
   z-index: 1;
   display: inline-block;
   float: right;
-  margin-top: 0px;
+  margin-top: 70px;
 }
 
 .menuHolder {
@@ -824,11 +834,15 @@ footer {
   float: right;
   margin-top: 14px;
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 44px;
 }
 
 .formBtn {
   display: inline-block;
   position: relative;
+}
+
+.marge-left {
+	padding-left: 40px !important;
 }
 /* ============================= end forms ============================= */

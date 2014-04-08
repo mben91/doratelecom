@@ -232,5 +232,27 @@ $('body').mousemove(function(){
         }
     );
 
+	// Init Google Map
+    if($('.map').length!==0) {
+
+        var google = window.google;
+        var lat = $('.map').attr('data-lat');
+        var lng = $('.map').attr('data-lng');
+        var mapOptions = {
+            zoom: 16,
+            scrollwheel: false,
+            center: new google.maps.LatLng(lat,lng),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map($('.map').get(0), mapOptions);
+        var myLatLng = new google.maps.LatLng(lat,lng);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            animation: google.maps.Animation.BOUNCE,
+        });
+
+        marker.setMap(map);
+    }
+	
     } //window function
 ) //window load
