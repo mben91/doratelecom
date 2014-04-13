@@ -32,13 +32,13 @@
  <div class="headerHolder">
        <header>
        <div class="logoHolder">
-			<img src="images/logo.png" width="350px" />
+			<a href="<?= $_SERVER['PHP_SELF'] ?>" ><img src="images/logo.png" width="350px" /></a>
             <!-- <h1><a href="#!/pageGallery" id="logo">oratorio</a></h1>  -->
        </div>
         </header>
         <div class="followHolder">
-                        <span>(+212) 535-53-70-90</span>
-                       <span style="margin-top: 4px;">dora.telecom@gmail.com</span>
+                       <span><span style="color: #009de0; display: inline; " >(+212)</span> 535-53-70-90</span>
+                       <span style="margin-top: 4px; color: rgb(255, 108, 0); ">dora.telecom@gmail.com</span>
                        <!-- <a href="#" class="myButton">Rejoignez nous sur FACEBOOK</a>-->
                             <!--<ul>
                                 <li><a href="#"><img src="images/followIcon1.png" alt=""></a></li>
@@ -103,7 +103,7 @@
 				<!-- {%FOOTER_LINK} -->
                 <div class="mainFooter" >
                 <div class="privHold">
-                     <pre class="textPrivacy">copyright© Dora Telecom - 2014 by <a href="http://www.devma.net" target="_blank">Devma</a>.</pre>
+                     <pre class="textPrivacy">copyright © Dora Telecom - 2014 by <a href="http://www.devma.net" target="_blank">Devma</a>.</pre>
                  </div>
                  </div>
 			</footer>
@@ -111,6 +111,11 @@
             </div>
 		</div>
 </div>
+
+<div style="position: fixed; width: 100%; height: 100%; top: 0; left:0; " >
+	<video src="videoBack.mp4" autoplay loop autobuffer preload="auto"  ></video>
+</div>
+	
 <script>
 $(window).load(function() {	
 	$('.page_spinner').fadeOut();
