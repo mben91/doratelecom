@@ -47,7 +47,7 @@ body {
 /* Global Structure ========================================================= */
 .main {
   margin: 0px auto 0 auto;
-  width: 940px;
+  width: 980px;
   z-index: 2;
   height: 100%;
 }
@@ -177,7 +177,7 @@ header {
 
 .headerHolder {
   position: relative;
-  width: 940px;
+  width: 980px;
   height: 135px;
   z-index: 10;
   margin: 0 auto;
@@ -206,6 +206,7 @@ header {
   position: relative;
   width: 220px;
   height: 540px;
+  margin-right: 40px;
 }
 
 #menu {
@@ -218,6 +219,14 @@ header {
   position: relative;
   display: inline-block;
   margin: 0 1px;
+  
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+#menu > li:hover {
+  margin-left: 20px;
 }
 
 #menu > li > a {
@@ -586,6 +595,10 @@ header {
   z-index: 1;
 }
 
+#img_slider > ul > li:nth-child(2n) {
+	box-shadow: 0px 0px 40px black;
+}
+
 #img_slider > ul {
   white-space: nowrap;
 }
@@ -798,7 +811,7 @@ footer {
   font-size: 12px;
   font-family: Arial;
   background: #000;
-  border: 1px solid #4C4C4C;
+  border: 1px solid #222;
 }
 
 #ContactForm textarea {
@@ -813,7 +826,7 @@ footer {
   outline: none;
   font-size: 15px;
   font-family: Arial;
-  border: 1px solid #4C4C4C;
+  border: 1px solid #222;
 }
 
 #ContactForm .block {
@@ -900,10 +913,22 @@ footer {
 
 #pageAbout .containerContent p {text-align: justify; margin-bottom: 20px;}
 
-#konika-partner { background: white; padding: 0 20px 10px 20px; border-radius: 0 20px 0 20px; margin-left: 30px; margin-top: 10px;}
+#konika-partner {
+  background: white;
+  padding: 0px 10px 5px 10px;
+  box-sizing: border-box;
+}
 
-.dora-clients {margin-bottom: 20px; margin-left: 10px;}
-.dora-clients img { margin-right: 20px;}
+.dora-clients {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.dora-clients div img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 29%;
+}
 
 .mainFooter {float: right;}
 .mainFooter .textPrivacy {font-size: 18px;}
