@@ -181,6 +181,7 @@ header {
   height: 135px;
   z-index: 10;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .slogan {
@@ -194,7 +195,8 @@ header {
   z-index: 1;
   display: inline-block;
   float: right;
-  margin-top: 70px;
+  /*margin-top: 70px;*/
+  margin-bottom: 20px;
 }
 
 .menuHolder {
@@ -637,7 +639,7 @@ header {
   position: relative;
   display: inline-block;
   float: right;
-  margin-top: 30px;
+  margin-top: 42px;
   width: 300px;
 }
 
@@ -846,3 +848,63 @@ footer {
 	padding-left: 40px !important;
 }
 /* ============================= end forms ============================= */
+
+
+
+.myButton {
+	float: right;
+	margin-top: 10px;
+	-moz-box-shadow:inset 0px 0px 13px -31px #7a8eb9;
+	-webkit-box-shadow:inset 0px 0px 13px -31px #7a8eb9;
+	box-shadow:inset 0px 0px 13px -31px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#637aad;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 38px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+	background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#5972a7;
+	text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#pageAbout .containerContent h2 {font-size: 40px;}
+
+#pageAbout ._fig1 img {margin-bottom: 20px;}
+
+#pageAbout .containerContent p {text-align: justify; margin-bottom: 20px;}
+
+#konika-partner { background: white; padding: 0 20px 10px 20px; border-radius: 0 20px 0 20px; margin-left: 30px; margin-top: 10px;}
+
+.dora-clients {margin-bottom: 20px; margin-left: 10px;}
+.dora-clients img { margin-right: 20px;}
+
+.mainFooter {float: right;}
+.mainFooter .textPrivacy {font-size: 18px;}
+.mainFooter .textPrivacy a {font-size: 18px;}

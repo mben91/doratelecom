@@ -11,6 +11,7 @@
   <script type="text/javascript" src="js/jquery-1.7.1.js" ></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <link rel="shortcut icon" href="images/favicon.jpg">
   <!--[if lt IE 9]>
   	<script type="text/javascript" src="js/html5.js"></script>
     <link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
@@ -36,13 +37,15 @@
        </div>
         </header>
         <div class="followHolder">
-                        <span>Call Us:  +1 (800) 12 34 567</span>
-                            <ul>
+                        <span>(+212) 535-53-70-90</span>
+                       <span style="margin-top: 4px;">dora.telecom@gmail.com</span>
+                       <!-- <a href="#" class="myButton">Rejoignez nous sur FACEBOOK</a>-->
+                            <!--<ul>
                                 <li><a href="#"><img src="images/followIcon1.png" alt=""></a></li>
                                 <li><a href="#"><img src="images/followIcon2.png" alt=""></a></li>
                                 <li><a href="#"><img src="images/followIcon3.png" alt=""></a></li>
                         
-                            </ul>
+                            </ul>  -->
                         </div>
  </div>
 <!--header end--> 
@@ -64,8 +67,32 @@
                              <li><a href="#!/pagePrivacy"><span class="overPlane"></span><span class="mText">Clients</span></a></li>
                              <li><a href="#!/pageContact"><span class="overPlane"></span><span class="mText">contact</span></a></li>
 					   </ul>
+					   
 				    </nav>
-                 </div> 
+				    <div class="facebookOuter">
+						 <div class="facebookInner">
+							  <div class="fb-like-box" 
+							      data-width="200" data-height="280" 
+							      data-href="https://www.facebook.com/profile.php?id=665045936874599&fref=ts" 
+							      data-show-faces="true" 
+							      data-stream="false" data-header="true">
+							  </div>          
+						 </div>
+					</div>
+						           
+					<div id="fb-root"></div>
+					
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+					</script>
+					
+					
+			</div>
 			<!--content -->
 			<article id="content">
 				<?php echo $this->layout()->content; ?> 
@@ -74,9 +101,9 @@
                   <!--footer -->
             <footer>
 				<!-- {%FOOTER_LINK} -->
-                <div class="mainFooter">
+                <div class="mainFooter" >
                 <div class="privHold">
-                     <pre class="textPrivacy">Great collection of free web templates <a href="http://www.websitetemplatesonline.com" target="_blank">here</a>.<br>&copy; 2012 Cream <span class="color4">Website Template</span> by <a class="_link2" rel="nofollow" href="http://www.templatemonster.com/">TemplateMonster.com</a></pre>
+                     <pre class="textPrivacy">copyright© Dora Telecom - 2014 by <a href="http://www.devma.net" target="_blank">Devma</a>.</pre>
                  </div>
                  </div>
 			</footer>
