@@ -652,7 +652,7 @@ header {
   position: relative;
   display: inline-block;
   float: right;
-  margin-top: 42px;
+  margin-top: 50px;
   width: 300px;
 }
 
@@ -661,8 +661,8 @@ header {
   position: relative;
   display: inline-block;
   color: #313131;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 12px;
   width: 100%;
   text-align: right;
 }
@@ -933,3 +933,38 @@ footer {
 .mainFooter {float: right;}
 .mainFooter .textPrivacy {font-size: 18px;}
 .mainFooter .textPrivacy a {font-size: 18px;}
+
+.infoHeader {
+	display: inline-block;
+}
+#sound {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 54px;
+  padding: 6px;
+  border-left: 2px solid #009de0;
+  
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  float: right;
+}
+#sound.unmuted {
+  background: url('../images/unmute.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#sound.muted {
+  background: url('../images/mute.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+#sound:hover {
+	padding-left: 15px;
+	/* background-color: rgb(255, 150, 0); */
+	border-color: #222;
+	background-position: center center;
+}

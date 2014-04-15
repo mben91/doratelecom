@@ -232,6 +232,16 @@ $('body').mousemove(function(){
         }
     );
 
+	// Sound Control
+	$('#sound').click(function() {
+		if($(this).hasClass('muted')) {
+			$('#mySound').animate({volume: '1'}, 2000);
+		} else {
+			$('#mySound').animate({volume: '0'}, 2000);
+		}
+		$(this).toggleClass('muted', 'unmuted');
+	});
+	
 	// Init Google Map
     if($('.map').length!==0) {
 
